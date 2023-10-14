@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horizontal Menu with Spacing</title>
+    <style>
+        /* Add CSS to style the horizontal menu with spacing */
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            background-color: #333; /* Background color for the menu bar */
+            display: flex; /* Use flexbox to create spacing */
+        }
+
+        ul.menu li {
+            margin-right: 150px; /* Add 50px spacing to the right of each item */
+        }
+
+        ul.menu li:last-child {
+            margin-right: 0; /* Remove spacing from the last item */
+        }
+
+        ul.menu li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        ul.menu li a:hover {
+            text-decoration: underline; /* Underline the text on hover */
+        }
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color:black;
+           
+        }
+       
+        .logo {
+            height: 80px;
+            
+        }
+        .headet {
+            height: 40px;
+            color:antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div style="
+    
+    height: 80px;
+    margin-left: 10px;
+   
+    border-color: rgb(0, 0, 0); 
+
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+
+">
+<div style="
+    width: 70px; 
+   
+"><img class="logo"  src="logo.jpg">
+</div>
+<div style="background-color: white; padding: 10px 6px 10px 10px;"><strong>3D Engineering </strong><br> We make your dreams into Reality<br> 3D Printing Design & Shop</div>  
+
+8 </div>
+
+<div style="
+position: absolute;
+
+
+top: 30px;
+right: 30px;
+">
+
+</div>
+
+<h3 class="header">Main</h3>
+
+</body>
+</html>

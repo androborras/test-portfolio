@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            background-color: #333; /* Background color for the menu bar */
+            display: flex; /* Use flexbox to create spacing */
+        }
+
+        ul.menu li {
+            margin-right: 150px; /* Add 50px spacing to the right of each item */
+        }
+
+        ul.menu li:last-child {
+            margin-right: 0; /* Remove spacing from the last item */
+        }
+
+        ul.menu li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        ul.menu li a:hover {
+            text-decoration: underline; /* Underline the text on hover */
+        }
+       
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label, input, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333; /* Background color for the menu bar */
+            display: flex; /* Use flexbox to create spacing */
+        }
+
+        ul.menu li {
+            margin-right: 50px; /* Add 50px spacing to the right of each item */
+        }
+
+        ul.menu li:last-child {
+            margin-right: 0; /* Remove spacing from the last item */
+        }
+
+        ul.menu li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        ul.menu li a:hover {
+            text-decoration: underline; /* Underline the text on hover */
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+    
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+   
+</body>
+</html>
